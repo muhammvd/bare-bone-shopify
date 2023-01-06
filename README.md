@@ -1,1 +1,1 @@
-This is a basic/bare-bone shopify theme with basic functionalities
+This is a basic/bare-bone shopify theme with basic functionalities.
