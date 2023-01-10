@@ -1,2 +1,13 @@
-<h1>Bare Bones Shopify</h1>
-<img src="{{ 'hello.png' | asset_url}}" /> 
+<h2>{{ collections['frontpage'].title }}</h2>
+{% for product in collections['frontpage'].products %}
+  <div>
+    <a href="{{ product.url }}">
+        <img src="{{ product.featured_image | image_url: width:400 }}" />
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price | money }}</p>
+    </a> 
+  </div>
+   
+
+  {{- product.title | link_to: product.url }}
+{% endfor %}
